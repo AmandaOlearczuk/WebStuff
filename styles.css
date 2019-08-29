@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+@font-face{
+    font-family:"LemonJelly";
+    src: url("Fonts/lemonjelly.ttf") format("ttf");
+}
+* { /* This applies for every element - defaults*/
+    box-sizing: border-box;
+    font-family: Raleway;   
+    color: #777;
+
+}
+
+html,body{ /* Default marigin and padding aren't zero, so we change */
+    margin:0px;
+    padding:0px;
+}
+
+.nav ul{ /* Class's nav unordered list*/
+    margin:0px;
+    
+}
+
+.nav li{ /*Class's nav unordered list's items*/
+    display:inline;
+}
+
+.nav a{ /*Class's nav links so all a's individual el's*/
+    /* We can't add padding to inline elements, so set display to inline-block*/
+    display: inline-block;
+    padding: 1%;
+    color:rgba(255, 255, 255, 0.589);
+    text-decoration:none;
+
+}
+
+.main-nav{ /* align main nav text to center*/
+    text-align:center;
+    font-size:1.1em;
+    font-weight:lighter;
+    border-bottom:1px solid rgba(255,255,255,.3);
+}
+
+.main-nav li{ /*home,store,about taken together*/
+    padding: 0% 5% 0% 5%; /*or 0 5%, 0 for top bottom, 5% for left and right*/
+
+}
+
+.nav a:hover {
+    background-color:rgba(255,255,255,.3);
+}
+
+.main-header{
+    background-color: rgba(0,0,0,.4);
+    background-image: url("Images/background.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom:1em ;
+
+}
+
+.band-name{
+    text-align:center;
+    margin:0;
+    font-size:3em;
+    font-family: LemonJelly;
+    font-weight:normal;
+    font-style:italic;
+    color:rgb(255, 255, 255);
+}
+
+.band-name-large {
+    font-size:5em;
+}
+
+.content-section{
+    margin:1em;
+}
+
+.container{
+    max-width:900px; /*so the piece of text doesnt get too wide*/
+    margin: 0 auto; /*auto so text centers in middle*/
+    padding:0% 2% ;
+}
+
+
+
