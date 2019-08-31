@@ -73,7 +73,7 @@ html,body{ /* Default marigin and padding aren't zero, so we change */
 
 .container{
     max-width:1000px; /*so the piece of text doesnt get too wide*/
-    margin: 0 auto; /*auto so text centers in middle*/
+    margin: 0 auto; /*auto so text centers in middle - only block elements can have auto margin*/
    
 }
 
@@ -112,6 +112,44 @@ html,body{ /* Default marigin and padding aren't zero, so we change */
 .footer-nav li{
     padding:0 2%;
 }
+
+.btn{
+    text-align:center;
+    vertical-align:middle;
+    padding:1em 3em;
+    cursor:pointer;
+}
+
+.header-btn-wrapper{
+    text-align:center;
+    padding:0% 1%;
+}
+
+.btn-header{
+color:white;
+background-color:rgba(199, 197, 197, 0.158);
+border: 1px solid rgb(159, 255, 250);
+border-radius:0px;
+}
+
+.btn-header:hover{
+    background-color:rgba(255, 255, 255, 0.424);
+}
+
+.header-btn-wrapper ul{
+    list-style-type: none;
+}
+
+.btn-header-play{
+    border-radius:50%;
+    margin-top:0.6em;
+    padding:0;
+    width:1.5em;
+    height:1.5em;
+    color:rgb(159, 255, 250);
+    font-size:4em;
+}
+
 
 
 
