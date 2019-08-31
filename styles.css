@@ -22,17 +22,17 @@ html,body{ /* Default marigin and padding aren't zero, so we change */
 }
 
 .nav a{ /*Class's nav links so all a's individual el's*/
-    /* We can't add padding to inline elements, so set display to inline-block*/
-    display: inline-block;
+    /* We can't add padding to Top & Bottom for inline elements, so set display to inline-block*/
+    display:inline-block;
     padding: 1%;
     font-weight:bold;
-    font-size:1.1em;
+    font-size:110%;
     color:rgba(255, 255, 255, 0.589);
     text-decoration:none;
 
 }
 
-.main-nav{ /* align main nav  to center*/
+.main-nav{ /* align main nav to center*/
     text-align:center;
     border-bottom:1px solid rgba(255,255,255,.3);
 }
@@ -47,18 +47,16 @@ html,body{ /* Default marigin and padding aren't zero, so we change */
 }
 
 .main-header{
-    background-color: rgba(0,0,0,.4);
     background-image: url("Images/background.jpg");
     background-blend-mode: multiply;
     background-size: cover;
-    padding-bottom:1em ;
-
+    padding-bottom:1.1em ;
 }
 
 .band-name{
     text-align:center;
     margin:0;
-    font-size:3em;
+    font-size:220%;
     font-family: 'Lobster', cursive;
     font-weight:normal;
     font-style:italic;
@@ -66,22 +64,53 @@ html,body{ /* Default marigin and padding aren't zero, so we change */
 }
 
 .band-name-large {
-    font-size:5em;
+    font-size:500%;
 }
 
-.content-section{
-    margin:1em;
+.content-section{ /*used for content so can be re-used for other sections*/
+    padding:0% 3%; /*Padding so text/images etc. are a bit away from the browser's border*/
 }
 
 .container{
-    max-width:900px; /*so the piece of text doesnt get too wide*/
+    max-width:1000px; /*so the piece of text doesnt get too wide*/
     margin: 0 auto; /*auto so text centers in middle*/
-    padding:0% 2% ;
+   
 }
 
 .section-header{
     font-family:Georgia, serif;
     font-weight:lighter;
+    color: rgb(66, 66, 66);
+    text-align:center;
+    font-size:200%;
+}
+
+.about-artist-image{
+    float:left;
+    padding:0 3.5% 2% 0;
+    /* Use if you want image to be circular: border-radius:50%; */
+}
+
+/* Note that paragraph's text is styled in *{} section */
+
+.main-footer{
+    clear:both;
+    background-color:rgb(51, 51, 51);
+    padding:0% 5% 0% 5%;
+}
+
+.main-footer-container{
+    display:flex;
+    align-items:center; /* center items vertically*/
+}
+
+.main-footer-container ul {
+    flex-grow:1;/*ability of this item to grow in comparison to other items. default is 0 */
+    text-align:end; /* use start & end values because in some languages, directions are flipped */
+}
+
+.footer-nav li{
+    padding:0 2%;
 }
 
 
